@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"romanus\startup_stm32f103xb.o"
+"romanus\i2c_lcd.o"
+"romanus\keypad_4x4.o"
+"romanus\main.o"
+"romanus\stm32f1xx_it.o"
+"romanus\stm32f1xx_hal_msp.o"
+"romanus\stm32f1xx_hal_gpio_ex.o"
+"romanus\stm32f1xx_hal_i2c.o"
+"romanus\stm32f1xx_hal.o"
+"romanus\stm32f1xx_hal_rcc.o"
+"romanus\stm32f1xx_hal_rcc_ex.o"
+"romanus\stm32f1xx_hal_gpio.o"
+"romanus\stm32f1xx_hal_dma.o"
+"romanus\stm32f1xx_hal_cortex.o"
+"romanus\stm32f1xx_hal_pwr.o"
+"romanus\stm32f1xx_hal_flash.o"
+"romanus\stm32f1xx_hal_flash_ex.o"
+"romanus\stm32f1xx_hal_exti.o"
+"romanus\stm32f1xx_hal_tim.o"
+"romanus\stm32f1xx_hal_tim_ex.o"
+"romanus\stm32f1xx_hal_uart.o"
+"romanus\system_stm32f1xx.o"
+--strict --scatter "ROMANUS\ROMANUS.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ROMANUS.map" -o ROMANUS\ROMANUS.axf
