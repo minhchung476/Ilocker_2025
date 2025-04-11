@@ -13,14 +13,14 @@ SoftwareSerial mySerial(4, 5);  //RX, TX
 // (Send and Receive)
 
 // 📌 Thông tin WiFi
-const char* ssid = "NHA 35 TANG 2";
-const char* password = "minhha368";
+const char* ssid = "";
+const char* password = "";
 
 // 📌 Twilio API thông tin
-const char* twilio_account_sid = "ACee0e83fb8290876077350f587cf3465e";
-const char* twilio_auth_token = "6c17105c7cf79002ac07efac47ac60df";
-const char* twilio_phone_number = "+18147872751";  // Số Twilio
-const char* owner_phone_number = "+84364031645";   // Số điện thoại nhận tin nhắn
+const char* twilio_account_sid = "";
+const char* twilio_auth_token = "";
+const char* twilio_phone_number = "";  // Số Twilio
+const char* owner_phone_number = "";   // Số điện thoại nhận tin nhắn
 
 // 📌 Nội dung tin nhắn
 static const char* message = "Sent from my ESP32";
